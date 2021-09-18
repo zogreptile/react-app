@@ -1,4 +1,21 @@
-# Getting Started with Create React App
+# С чего начать?
+
+Версия Node JS: 12.16.3
+
+----
+
+1. Установить зависимости в корне проекта и директории `server`:
+    ```console
+    npm i
+    cd server && npm i
+    ```
+
+1. Запустить сервер и сборку фронтенда — в корне проекта выполнить:
+    ```console
+    npm run dev
+    ```
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

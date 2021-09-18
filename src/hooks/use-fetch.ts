@@ -9,7 +9,7 @@ interface IRequestConfig {
 
 type UseFetchReturnValues = [response: any, makeRequest: () => void];
 
-axios.defaults.baseURL = 'https://jsonplaceholder.typicode.com';
+axios.defaults.baseURL = 'http://localhost:3005';
 
 export const useFetch = (url: string, config: IRequestConfig = {}): UseFetchReturnValues => {
   const { method = 'get', body = null, headers = null } = config;
@@ -36,7 +36,9 @@ export const useFetch = (url: string, config: IRequestConfig = {}): UseFetchRetu
 
   const makeRequest = () => {
     axios(axiosConfig)
-      .then(setResponse)
+      .then((res) => {
+        setResponse({ ...res })
+      })
       .catch(console.error);
   };
 

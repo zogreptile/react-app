@@ -18,6 +18,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run start\"",
+    "server": "cd server && npm run start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1"
   }
 }
