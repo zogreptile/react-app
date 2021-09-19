@@ -1,0 +1,28 @@
+.log {
+  display: flex;
+  margin: 0 -15px;
+  padding-top: 30px;
+}
+
+.log__column {
+  padding: 0 15px;
+  width: 50%;
+}
+
+.log__title {
+  margin: 0 0 15px;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.log__title--success {
+  color: #008300;
+}
+
+.log__title--fail {
+  color: #a80000;
+}
+
+.log__item {
+  margin-bottom: 15px;
+}
